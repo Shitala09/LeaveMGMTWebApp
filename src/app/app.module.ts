@@ -9,7 +9,7 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { ListComponent } from './component/leave/list/list.component';
 import { HeaderComponent } from './template/header/header.component';
 import { NgChartsModule  } from 'ng2-charts';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { TokenInterceptor } from './utils/token.interceptor';
 
 @NgModule({
@@ -23,6 +23,7 @@ import { TokenInterceptor } from './utils/token.interceptor';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MaterialModule,
     NgChartsModule  
   ],

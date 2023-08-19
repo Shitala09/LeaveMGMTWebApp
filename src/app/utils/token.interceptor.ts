@@ -56,12 +56,10 @@ export class TokenInterceptor implements HttpInterceptor {
           this.notifySrv.notificationsnackbar(error.message)
         }
         if (error.status == 401) {
-          // window.location.reload();
           this.notifySrv.notificationsnackbar("Authentication Token Expired. Please login again")
           this.tokenSrv.removeToken();
           this.router.navigate(["/login"]);
         } if (error.status == 400) {
-          // window.location.reload();
           this.notifySrv.notificationsnackbar(error.error.title)
         }
         return throwError(errorMessage);
