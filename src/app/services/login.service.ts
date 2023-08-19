@@ -37,7 +37,7 @@ export class LoginService implements OnDestroy {
 
   logOut() {
     console.log("logout");
-    localStorage.removeItem("tpguser");
+    localStorage.removeItem("user");
     this.loggedIn.next(false);
     this.loggedInUserName.next("");
     this.router.navigate(["/login"]);

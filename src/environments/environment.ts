@@ -2,7 +2,7 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
   let config={
-    url: 'https://localhost:44372',
+    url: 'https://localhost:7059/MgmtApi/',
   }
   export const environment = {
     production: false,

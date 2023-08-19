@@ -5,3 +5,8 @@ export interface IResponse {
         code: number
     }
 }
+
+export interface ISaveRes {
+    message: [],
+    code: number
+}

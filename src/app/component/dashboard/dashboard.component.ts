@@ -8,9 +8,9 @@ import { Chart } from "chart.js";
   })
   export class DashboardComponent implements OnInit {
     availableLeavesData: number[]= [10, 20, 30];
-    appliedLeaveData: number;
-    pendingApprovalData: number;
-    leaveBalanceData: number;
+    appliedLeaveData:number[]= [10, 20, 30];;
+    pendingApprovalData: number[]= [10, 20, 30];;
+    leaveBalanceData: number[]= [10, 20, 30];;
     
     constructor(public fb: FormBuilder) {
     }
